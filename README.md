@@ -6,10 +6,10 @@ In this space, height (Y) has an inverse square relationship with width (X) [(0,
 
 This began with my fascination with space. Inverse square proportion governs several gravity/entropy phenomenons. A vortex (black hole) can be observed by making "y" inversely proportional to the square of the amplitde (radius of the circle).
 
-*TRENCH*
+**TRENCH**
 ![Trench Screenshot](https://raw.github.com/sagar-sm/BlackTrench/master/screenshot.png)
 
-*VORTEX*
+**VORTEX**
 ![Vortex Screenshot](https://raw.github.com/sagar-sm/BlackTrench/master/screenshot2.png)
 
 Press v or t for switching between vortex or trench.
