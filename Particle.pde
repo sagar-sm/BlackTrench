@@ -12,8 +12,8 @@ class Particle{
     pos.y = amp;
   }
   
-  void travel(){
-    update();
+  void travel(String mode){
+    update(mode);
     pushMatrix();
     translate(pos.x, pos.y, pos.z);
     sphere(2);
@@ -23,8 +23,11 @@ class Particle{
     popMatrix();
   }
   
-  void update(){
-    pos.y = height/(1*(pow(abs(pos.x),2)/700)); //inverse square relationship x-y
+  void update(String mode){
+    if(mode == "trench")
+      pos.y = height/(1*(pow(abs(pos.x),2)/700)); //inverse square relationship y-x2 for trench
+    else if (mode == "vortex")
+      pos.y = height/(1*(pow(abs(amp),2)/700)); //inverse sqy y-amp for vortex
     pos.x=amp*sin(theta);
     pos.z=amp*cos(theta);
     theta+=0.1;
